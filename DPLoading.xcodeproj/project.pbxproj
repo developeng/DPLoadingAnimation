@@ -15,6 +15,9 @@
 		57D0D57A20C668AB0089D8A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0D57920C668AB0089D8A7 /* main.m */; };
 		57D0D58420C668AB0089D8A7 /* DPLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0D58320C668AB0089D8A7 /* DPLoadingTests.m */; };
 		57D0D58F20C668AB0089D8A7 /* DPLoadingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0D58E20C668AB0089D8A7 /* DPLoadingUITests.m */; };
+		57D0D5A320C668F90089D8A7 /* UULoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0D59E20C668F90089D8A7 /* UULoadingView.m */; };
+		57D0D5A420C668F90089D8A7 /* UIViewController+UULoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0D59F20C668F90089D8A7 /* UIViewController+UULoading.m */; };
+		57D0D5A520C668F90089D8A7 /* UULoadAnimationManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D0D5A120C668F90089D8A7 /* UULoadAnimationManage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		57D0D58A20C668AB0089D8A7 /* DPLoadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DPLoadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D0D58E20C668AB0089D8A7 /* DPLoadingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPLoadingUITests.m; sourceTree = "<group>"; };
 		57D0D59020C668AB0089D8A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D0D59D20C668F90089D8A7 /* UULoadAnimationManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UULoadAnimationManage.h; sourceTree = "<group>"; };
+		57D0D59E20C668F90089D8A7 /* UULoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UULoadingView.m; sourceTree = "<group>"; };
+		57D0D59F20C668F90089D8A7 /* UIViewController+UULoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UULoading.m"; sourceTree = "<group>"; };
+		57D0D5A020C668F90089D8A7 /* UULoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UULoadingView.h; sourceTree = "<group>"; };
+		57D0D5A120C668F90089D8A7 /* UULoadAnimationManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UULoadAnimationManage.m; sourceTree = "<group>"; };
+		57D0D5A220C668F90089D8A7 /* UIViewController+UULoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UULoading.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		57D0D56920C668A90089D8A7 /* DPLoading */ = {
 			isa = PBXGroup;
 			children = (
+				57D0D59C20C668F90089D8A7 /* DPLoadAnimation */,
 				57D0D56A20C668A90089D8A7 /* AppDelegate.h */,
 				57D0D56B20C668A90089D8A7 /* AppDelegate.m */,
 				57D0D56D20C668A90089D8A7 /* ViewController.h */,
@@ -130,6 +140,19 @@
 				57D0D59020C668AB0089D8A7 /* Info.plist */,
 			);
 			path = DPLoadingUITests;
+			sourceTree = "<group>";
+		};
+		57D0D59C20C668F90089D8A7 /* DPLoadAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				57D0D5A220C668F90089D8A7 /* UIViewController+UULoading.h */,
+				57D0D59F20C668F90089D8A7 /* UIViewController+UULoading.m */,
+				57D0D59D20C668F90089D8A7 /* UULoadAnimationManage.h */,
+				57D0D5A120C668F90089D8A7 /* UULoadAnimationManage.m */,
+				57D0D5A020C668F90089D8A7 /* UULoadingView.h */,
+				57D0D59E20C668F90089D8A7 /* UULoadingView.m */,
+			);
+			path = DPLoadAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				57D0D56F20C668A90089D8A7 /* ViewController.m in Sources */,
+				57D0D5A520C668F90089D8A7 /* UULoadAnimationManage.m in Sources */,
+				57D0D5A320C668F90089D8A7 /* UULoadingView.m in Sources */,
+				57D0D5A420C668F90089D8A7 /* UIViewController+UULoading.m in Sources */,
 				57D0D57A20C668AB0089D8A7 /* main.m in Sources */,
 				57D0D56C20C668A90089D8A7 /* AppDelegate.m in Sources */,
 			);
