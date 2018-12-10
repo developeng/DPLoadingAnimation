@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIViewController+UULoading.h"
+#import "DPHUD/DPHUD.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showLoadAnimationInView:self.view];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"MBProgressHUD二次封装加载动画" forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 100, self.view.frame.size.width, 100);
+    [button setBackgroundColor:[UIColor redColor]];
+    [button addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)buttonClick{
+    [DPHUD showAnimation];
 }
 
 
